@@ -28,7 +28,7 @@ function userFlash(btn) {
     btn.classList.add("userflash");
     setTimeout(function () {
         btn.classList.remove("userflash");
-    }, 500);
+    }, 150);
 }
 
 function levelUp() {
@@ -47,7 +47,7 @@ function levelUp() {
 function checkAns(idx) {
     if (userSeq[idx] === gameSeq[idx]) {
         if (userSeq.length === gameSeq.length) {
-            setTimeout(levelUp, 1000);
+            setTimeout(levelUp, 250);
         }
     } else {
         h2.innerHTML = `Game over! Your score was <b>${level}</b><br>Press Start to play again.`;
